@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Raina Shakir - Electrical Engineering student portfolio">
+  <title>Raina Shakir | Electrical Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home">Raina<span>.</span></a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">ELECTRICAL ENGINEERING • EMBEDDED • DIGITAL DESIGN</p>
+        <h1>Building at the intersection of <span>hardware & intelligence.</span></h1>
+        <p class="lead">
+          I'm Raina Shakir, an Electrical Engineering student at PIEAS interested in
+          embedded systems, VLSI, digital design, industrial automation, and machine learning.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn secondary" href="mailto:raina.shakir.ee@gmail.com">Let's connect</a>
+        </div>
+        <div class="quick-links">
+          <a href="https://github.com/rainashakir-ee" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/rainashakir2005" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="terminal-top"><span></span><span></span><span></span></div>
+        <div class="terminal-body">
+          <p><span class="code-muted">const</span> raina = {</p>
+          <p>&nbsp;&nbsp;degree: <span>"BSEE"</span>,</p>
+          <p>&nbsp;&nbsp;university: <span>"PIEAS"</span>,</p>
+          <p>&nbsp;&nbsp;focus: [</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>"Embedded Systems"</span>,</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>"VLSI / Digital Design"</span>,</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>"Automation & ML"</span></p>
+          <p>&nbsp;&nbsp;]</p>
+          <p>};</p>
+          <p class="cursor">▌</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-heading">
+        <span>01</span>
+        <h2>About me</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p class="big-text">
+            I learn best by building: from PCB-level hardware and sensor interfacing
+            to LabVIEW data acquisition and machine learning models.
+          </p>
+          <p>
+            I'm pursuing a BS Electrical Engineering at the Pakistan Institute of Engineering
+            and Applied Sciences (PIEAS), Islamabad, from 2023–2027. My interests sit between
+            physical hardware and intelligent systems, especially embedded control, digital design,
+            VLSI, and industrial automation.
+          </p>
+        </div>
+        <div class="info-card">
+          <div><span>Education</span><strong>BS Electrical Engineering</strong><small>PIEAS, Islamabad • 2023–2027</small></div>
+          <div><span>Based in</span><strong>Islamabad, Pakistan</strong></div>
+          <div><span>Currently exploring</span><strong>Embedded • VLSI • ML</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-heading">
+          <span>02</span>
+          <h2>Selected projects</h2>
+        </div>
+
+        <div class="featured-project">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <p class="project-type">INDUSTRIAL INTERNSHIP • CONTROL SYSTEMS</p>
+            <h3>RO Filter & Sparkling Water Machine</h3>
+            <p>
+              Designed the sensing and control side of a water treatment machine around a
+              custom STM32H743IIT6 PLC. Interfaced an ADS1115 external ADC over I²C with
+              pH and TDS sensors, and controlled 24 V solenoid valves through a MOSFET driver
+              with flyback protection.
+            </p>
+            <p>
+              Prototyped the pH subsystem on an ESP32-S3 with a 20×4 I²C LCD, fixed ADC
+              settings at 12-bit / 3.3 V, reduced noise using a median filter, and prepared
+              P&ID-style block diagrams for the project report.
+            </p>
+            <div class="tags"><span>STM32</span><span>ESP32-S3</span><span>ADS1115</span><span>I²C</span><span>C/C++</span></div>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="card-number">02</span>
+            <p class="project-type">POWER ELECTRONICS</p>
+            <h3>THD Analysis of SPWM Inverters</h3>
+            <p>Simulated SPWM inverter systems and analysed Total Harmonic Distortion using PSIM. This project connects switching behaviour, output waveform quality, and harmonic analysis.</p>
+            <div class="tags"><span>PSIM</span><span>SPWM</span><span>THD</span></div>
+          </article>
+
+          <article class="project-card">
+            <span class="card-number">03</span>
+            <p class="project-type">DIGITAL SYSTEMS • PCB</p>
+            <h3>SAP-1 Computer on PCB</h3>
+            <p>Built the SAP-1 simple-as-possible computer as a physical hardware system on PCB, bringing CPU architecture concepts from diagrams and logic blocks into real circuitry.</p>
+            <div class="tags"><span>PCB</span><span>Digital Logic</span><span>Logic ICs</span></div>
+          </article>
+
+          <article class="project-card">
+            <span class="card-number">04</span>
+            <p class="project-type">MACHINE LEARNING</p>
+            <h3>Disease Prediction from Medical Data</h3>
+            <p>Worked with a 100,000-record dataset for diabetes prediction. Performed EDA and preprocessing, then compared Logistic Regression, Random Forest, SVM, and XGBoost. XGBoost achieved 97.06% accuracy, 80.74% F1, and 97.58% ROC-AUC.</p>
+            <div class="tags"><span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>Pandas</span></div>
+          </article>
+
+          <article class="project-card">
+            <span class="card-number">05</span>
+            <p class="project-type">DEEP LEARNING</p>
+            <h3>Handwritten Character Recognition</h3>
+            <p>Built a CNN to classify handwritten digits and characters using MNIST/EMNIST, including preprocessing, model training, evaluation, and confusion-matrix analysis.</p>
+            <div class="tags"><span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>CNN</span></div>
+          </article>
+
+          <article class="project-card small-card">
+            <p class="project-type">INSTRUMENTATION</p>
+            <h3>LabVIEW Water Level Indicator</h3>
+            <p>Simulated threshold-based water-level alerts using while loops, shift registers, and LED indicators.</p>
+            <div class="tags"><span>LabVIEW</span><span>DAQ</span></div>
+          </article>
+
+          <article class="project-card small-card">
+            <p class="project-type">ANALOG ELECTRONICS</p>
+            <h3>Class AB Power Amplifier</h3>
+            <p>Designed and studied a Class AB amplifier as part of analog electronics work.</p>
+            <div class="tags"><span>Analog</span><span>Amplifiers</span></div>
+          </article>
+
+          <article class="project-card small-card">
+            <p class="project-type">DIGITAL ELECTRONICS</p>
+            <h3>24-Hour Digital Clock</h3>
+            <p>Built a 24-hour digital clock using 4026 ICs and 7-segment displays.</p>
+            <div class="tags"><span>4026</span><span>7-Segment</span></div>
+          </article>
+
+          <article class="project-card small-card">
+            <p class="project-type">MACHINE LEARNING</p>
+            <h3>Student Performance Analysis</h3>
+            <p>Applied linear regression to a 1,000-student dataset, achieving an R² of 0.88.</p>
+            <div class="tags"><span>Python</span><span>Regression</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-heading">
+        <span>03</span>
+        <h2>Skills & tools</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group"><h3>Programming</h3><div class="skill-list"><span>C / C++</span><span>Python</span></div></div>
+        <div class="skill-group"><h3>Embedded</h3><div class="skill-list"><span>ESP32</span><span>STM32</span><span>I²C</span><span>Sensor interfacing</span></div></div>
+        <div class="skill-group"><h3>Engineering tools</h3><div class="skill-list"><span>MATLAB</span><span>LTspice</span><span>Proteus</span><span>LabVIEW</span><span>PSIM</span><span>STM32CubeIDE / CubeMX</span></div></div>
+        <div class="skill-group"><h3>Machine learning</h3><div class="skill-list"><span>Scikit-learn</span><span>XGBoost</span><span>TensorFlow / Keras</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div></div>
+        <div class="skill-group"><h3>Design exposure</h3><div class="skill-list"><span>Cadence EDA</span><span>RTL → GDSII</span><span>PCB hardware</span></div></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-heading">
+          <span>04</span>
+          <h2>Experience & learning</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">JUN — AUG 2026</div>
+            <div><h3>Electrical Engineering Intern</h3><p class="muted">Esforge (Pvt.) Ltd • Islamabad • 9 weeks</p><p>Control System Design & Manufacturing team. Worked on sensor interfacing, embedded control, ADC integration, actuator drivers, filtering, and system documentation for a water treatment machine.</p></div>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2026</div>
+            <div><h3>Machine Learning Intern</h3><p class="muted">CodeAlpha • Remote</p><p>Worked on applied machine learning projects involving data preprocessing, exploratory analysis, regression, classification, and model evaluation.</p></div>
+          </div>
+        </div>
+
+        <div class="learning-grid">
+          <div><h3>Workshops & activities</h3><ul>
+            <li>Two-Day VLSI Workshop — RTL to GDSII Flow, ChipXpert</li>
+            <li>3-Day Machine Learning Workshop — PIEAS AI Society (PAIS) × IEEE Student Branch</li>
+            <li>AI Tools Workshop — Be10x</li>
+            <li>Participant in doctoral research on women engineers in Pakistan — Certificate of Appreciation, LCWU</li>
+          </ul></div>
+          <div class="quote-card"><span>“</span><p>Learning by building is the approach I bring to every new project.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section container">
+      <div class="contact-card">
+        <p class="eyebrow">05 • CONTACT</p>
+        <h2>Let's build something.</h2>
+        <p>I'm open to engineering opportunities, technical collaborations, and conversations around embedded systems, digital design, VLSI, and intelligent systems.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:raina.shakir.ee@gmail.com">raina.shakir.ee@gmail.com</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/rainashakir2005" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn secondary" href="https://github.com/rainashakir-ee" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>© <span id="year"></span> Raina Shakir</span>
+    <span>Designed & built as a student portfolio.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
